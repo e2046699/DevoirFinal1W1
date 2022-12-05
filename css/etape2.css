@@ -1,0 +1,175 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+/*Les conteneurs principals*/
+html {
+    scroll-behavior: smooth;
+}
+body{
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    min-width: 400px;
+    max-width: 2000px;    
+}
+
+.entete, #main, footer{
+    padding: 20px 20%;
+ }
+
+header {
+    display: flex;
+    flex-direction: column;
+    border-bottom:2px solid gray;        
+}
+
+#main{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding-top: 0;
+    padding-bottom: 0;
+    background-color: antiquewhite;
+}
+
+footer{
+    display: flex;
+    flex-direction: row;
+    background-color: black;
+    color: white;
+    justify-content: space-between; 
+    padding:3%;
+    min-width:400px;
+    max-width: 2000px;
+    flex:1 0 30%;
+}
+
+
+/*Le contenu de l'entete*/
+
+/*Menu*/
+
+nav{
+    display: flex;
+    background-color:black;
+    justify-content: space-between;
+    position: fixed;
+    width: 100%;   
+    height: 50px;
+}
+
+a{
+   margin: 0 auto;
+   color: white;
+   text-decoration: none;
+   padding-top: 16px;
+   margin: 0 auto;
+   border: solid 2px black;
+}
+
+a:hover{
+    color: green;
+    border: 2px ridge green;
+    border-radius: 25px 25px;
+    animation: test 3s infinite;   
+}
+@keyframes test {
+    50% {letter-spacing: 5px;}
+}
+
+/*En tete*/
+
+.entete img{
+    display: block;
+    height: 65px;    
+}
+.entete{ 
+    margin-top: 50px;
+    display: flex;
+    justify-content: space-around ;      
+}
+ .entete div{
+    display: block;
+    position: relative;
+}
+h1{
+    margin:0 auto;
+}
+
+ .entete div h1{
+    font-style: bold;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+/* Le contenu du main*/
+
+article{
+    padding-top: 10%;
+    display: flex;
+    flex-direction: row;
+}
+article:nth-child(even){
+    
+    display: flex;
+    flex-direction: row-reverse;
+}
+
+/*Le contenu ecrit*/
+article h1{
+    font-size: 25px;
+    font-weight: bold;
+}
+
+figcaption{
+    font-weight: bold;
+    font-size: large;
+    text-align: center;
+}
+
+/*image*/
+
+ article img{
+    padding:10px ;
+}
+
+/*Le contenu du footer*/
+
+footer dl{
+    justify-content: flex-end; 
+
+}
+
+dt{
+    font-size: 25px;
+    margin-bottom: 6px;
+    margin-top: 20px;
+}
+
+dd{
+    font-size: 15px;
+    margin-top: 10px;
+}
+
+
+/*Les icones et les boutons*/
+
+form, i{
+    display: flex;
+    padding-top: 100px;     
+}
+
+i{
+    font-size: 24px;
+}
+
+/*La barre de recherche*/
+
+fieldset{
+    display: flex;
+    border: dotted 1px;   
+}
+.button{
+    justify-content: flex-end;
+    background-color: black;
+    margin-left: 10px;
+    padding-right: 0;    
+}
